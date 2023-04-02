@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Website</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <!-- Navigation bar -->
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="About.html">About</a>
+      <a href="#">Contact</a>
+    </nav>
+
+    <!-- Main content -->
+    <div class="container">
+      <h1>My List</h1>
+      <form id="list-form" class="clearfix">
+        <input type="text" id="list-item" autocomplete="off" 
+        placeholder="Enter an item" maxlength="50">
+        <button type="submit" id="add-btn">Add</button>
+        <label for="image-input" class="custom-file-upload">Choose File</label>
+        <input id="image-input" type="file" accept="image/*">
+        <button type="submit" id="clear-btn">Clear</button>
+        <div id="char-count"></div>
+        
+        
+
+        <ul id="list-items"></ul>
+        <div id="bottom-list">
+          <span id="item-count"></span>
+          <div id="pagination" class="pagination"></div>
+        </div>
+      </form>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="clearlogin.js"></script>
+  </body>
+</html>
